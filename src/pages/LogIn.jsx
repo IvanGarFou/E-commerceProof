@@ -4,13 +4,12 @@ import '../App.css'
 export default function LogIn() {
     return(
         <>
- 
-            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="" />
-
+            
             <section className="login-container">
                 <form className="formulario">
-                    <h2>Inicio Sesion</h2>
-                    <p>Inicia Sesion en tu cuenta, si no tienes una, recibe indicaciones para crear una</p>
+                    <img src="https://i.postimg.cc/7bvd4FMw/musica.png" alt="" />
+
+                    <h2>Sign in to your account</h2>
 
                     <label htmlFor="username">Correo Electronico: </label>
                     <input type="text" name="username" id="username" required />
