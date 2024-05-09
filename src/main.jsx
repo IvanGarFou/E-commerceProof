@@ -7,6 +7,6 @@ import Product from './pages/Product.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <LogIn />
+    <Product />
   </React.StrictMode>,
 )

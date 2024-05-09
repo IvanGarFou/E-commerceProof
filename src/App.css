@@ -73,7 +73,7 @@ button:hover{
 .product-container{
   display: flex;
   flex-direction: row;
-  margin: 20vh 15vw;
+  margin: 12vh 15vw;
 }
 
 .images-music img{
@@ -85,7 +85,7 @@ button:hover{
 
 .music-description{
    padding: 2%;
-   margin-top: 2vh;
+   margin-top: 6vh;
    margin-left: 2vh;
    width: 60vh;
 }
