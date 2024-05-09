@@ -5,19 +5,27 @@
     padding: 0;
     border-bottom: 1px solid rgb(238, 238, 238);
     box-shadow: 0px 5px 20px rgba(31, 31, 31, 0.1);
-    height: 11.5vh;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(252, 252, 252);
 }
 
 .header img{
-    margin-right: 85vh;
-    margin-left: -3vh;
-    margin-top: 2vh;
+    margin-right: 90vh;
+    margin-left: 0vh;
+    margin-top: 1vh;
+    height: 50px;
+    width: 200px;
 }
 
 .options ul{
     display: flex;
     flex-direction: row;
-    margin-top: 3vh;
+    margin-top: 1vh;
 
 }
 
@@ -27,7 +35,7 @@
     list-style: none;
 }
 
-.option li:hover{
+.options li:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
