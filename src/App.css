@@ -15,7 +15,7 @@ body{
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(244, 244, 244);
   font-size: 14px;
   color: #3d3d3d;
   z-index: 1;
@@ -81,6 +81,25 @@ button:hover{
 
 }
 
+span{
+  color: rgb(232, 69, 10);
+}
+
+h2{
+  font-size: 22px;
+}
+
+.intro{
+  padding: 2vh 25vw;
+  text-align: center;
+  animation: fadeInAnimation 0.8s ease-in-out forwards;
+
+}
+
+.intro{
+  font-size: 40px;
+}
+
 .product-container{
   display: flex;
   flex-direction: row;
@@ -132,7 +151,7 @@ button:hover{
 
 .alexa-des{
   display: flex;
-  margin-top: 8vh;
+  margin-top: 15vh;
   width: 90vw;
   text-align: justify;
   line-height: 1.6;
@@ -141,47 +160,87 @@ button:hover{
 }
 
 .alexa-description{
-  padding: 2%;
+  padding: 3%;
   margin: 15vh 5vw;
 }
 
+.alexa-des h1{
+  font-size: 30px;
+}
 
 .upgrade-membership{
-  margin: 11vh 17vw;
+  margin: 10vh 20vw;
   display: flex;
-  background-color: #1c1c1c;
+  margin-top: 20vh;
+  background-color: rgb(255,255,255);
   margin-bottom: 25wh;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 25px;
-  height: 35vh;
+  height: 70vh;
   animation: fadeInAnimation 0.8s ease-in-out forwards;
 
 }
 
 
 .upgrade-membership img{
-  width: 32vh;
-  height: 45vh;
-  margin: -10vh;
+  height: 60vh;
+  width: 45vw;
+  margin-top: 10vh;
 }
 
 .upgrade-text{
-  padding: 7vh;
-  margin-right: 13vw;
+  line-height: 1.5;
+  margin-top: 16vh;
+  margin-left: 5vw;
+  width: 40vw;
   text-align: justify;
-  width: 27vw;
-  line-height: 1.6;
 }
+
+.upgrade-text h2{
+  font-size: 30px;
+  text-align: start;
+}
+
+
+.conciertos{
+  margin: 1vh 20vw;
+  margin-top: 12vh;
+  display: flex;
+  background-image: url('https://i.postimg.cc/c1gKbWbL/concierto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 25wh;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  height: 70vh;
+  animation: fadeInAnimation 0.8s ease-in-out forwards;
+}
+
+.conciertos-text{
+  line-height: 1.5;
+  margin-top: 18vh;
+  margin-left: 5vw;
+  width: 23vw;
+  text-align: justify;
+}
+
+
+.conciertos-text h2{
+  font-size: 30px;
+  text-align: start;
+}
+
 
 .descuento-estudiantes{
   display: flex;
   padding: 5vw;
   animation: fadeInAnimation 0.8s ease-in-out forwards;
-
+  margin-top: 12vh;
 }
 
 .descuento-estudiantes img{
-  width: 38vw;
+  width: 45vw;
+  border-radius: 15px;
   margin-right: -5vw;
 }
 
@@ -200,7 +259,7 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
   margin-bottom: 0;
 }
 
@@ -212,10 +271,10 @@ button:hover{
 
 .main h1{
   font-size: 42px;
-  margin-bottom: 0vh;
+  margin-bottom: -2vh;
 }
 
 .main .music-image {
   width: 90vw;
-  margin-top: -4vh;  
+  margin-top: -3vh;  
 }
