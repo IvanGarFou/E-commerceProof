@@ -9,6 +9,18 @@
   }
 }
 
+@keyframes fadeInSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 body{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -92,7 +104,7 @@ h2{
 .intro{
   padding: 2vh 25vw;
   text-align: center;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 
 }
 
@@ -104,7 +116,7 @@ h2{
   display: flex;
   flex-direction: row;
   margin: 12vh 15vw;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 
 }
 
@@ -155,7 +167,7 @@ h2{
   width: 90vw;
   text-align: justify;
   line-height: 1.6;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 
 }
 
@@ -177,7 +189,7 @@ h2{
   color: rgb(0, 0, 0);
   border-radius: 25px;
   height: 70vh;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 
 }
 
@@ -213,7 +225,7 @@ h2{
   color: rgb(255, 255, 255);
   border-radius: 25px;
   height: 70vh;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 }
 
 .conciertos-text{
@@ -234,8 +246,9 @@ h2{
 .descuento-estudiantes{
   display: flex;
   padding: 5vw;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  opacity: 0;
   margin-top: 12vh;
+  animation: fadeInAnimation 2s ease-in-out forwards;
 }
 
 .descuento-estudiantes img{
@@ -259,7 +272,9 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeInAnimation 2s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInSlideIn 1s ease forwards;
   margin-bottom: 0;
 }
 
@@ -271,10 +286,11 @@ h2{
 
 .main h1{
   font-size: 42px;
-  margin-bottom: -2vh;
+  margin-bottom: 0vh;
 }
 
 .main .music-image {
   width: 90vw;
   margin-top: -3vh;  
 }
+

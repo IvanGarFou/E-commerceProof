@@ -1,16 +1,31 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import '../App.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 function Home() {
+  const [showMain, setShowMain] = useState(false);
 
+  useEffect(() => {
+    function handleScroll() {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight
+      ) {
+        setShowMain(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
       <Header/>
 
-      <section className='main'>
-            <img src="https://i.postimg.cc/7bvd4FMw/musica.png" alt="" />
+      <section className={`main ${showMain ? 'visible' : ''}`}>
+         <img src="https://i.postimg.cc/7bvd4FMw/musica.png" alt="" />
 
             <h1>Sumérgete en el <span> Sonido.</span></h1>
             <button>Ingresa ahora!</button>
